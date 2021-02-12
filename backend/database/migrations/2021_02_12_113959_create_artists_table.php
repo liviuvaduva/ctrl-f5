@@ -16,8 +16,8 @@ class CreateArtistsTable extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('title');
+            $table->string('name', 50);
+            $table->string('title', 100);
             $table->dateTime('deleted_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->dateTime('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
