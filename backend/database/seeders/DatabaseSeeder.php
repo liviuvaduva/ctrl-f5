@@ -15,8 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        Artists::factory(10)->create();
-        Movies::factory(10)->create();
+        Movies::factory(10)->create()->each(function ($movie) {
+            $artists = Artists::factory(10)->create();
+            $movie->artists()->saveMany($artists);
+        });
     }
 }
