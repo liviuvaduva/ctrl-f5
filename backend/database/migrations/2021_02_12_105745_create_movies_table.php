@@ -21,9 +21,9 @@ class CreateMoviesTable extends Migration
             $table->decimal('rating', 10, 0);
             $table->text('description');
             $table->string('image');
-            $table->dateTime('delete_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            $table->dateTime('deleted_at')->nullable();
             $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->dateTime('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at')->nullable();
             // $table->timestamps();
         });
     }
