@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\Movies;
+use App\Models\Movie;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\WithFaker;
 
-class MoviesFactory extends Factory
+class MovieFactory extends Factory
 {
 
     use WithFaker;
@@ -16,7 +16,7 @@ class MoviesFactory extends Factory
      *
      * @var string
      */
-    protected string $model = Movies::class;
+    protected string $model = Movie::class;
 
     /**
      * Define the model's default state.

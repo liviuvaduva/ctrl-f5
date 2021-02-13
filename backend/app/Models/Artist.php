@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Artists extends Model
+class Artist extends Model
 {
     use HasFactory;
 
@@ -15,6 +15,6 @@ class Artists extends Model
      */
     public function movies()
     {
-        return $this->belongsToMany(Movies::class);
+        return $this->belongsToMany(Movie::class);
     }
 }

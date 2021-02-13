@@ -13,9 +13,9 @@ class CreateArtistsMovies extends Migration
      */
     public function up()
     {
-        Schema::create('artists_movies', function (Blueprint $table) {
-            $table->integer('artists_id');
-            $table->integer('movies_id');
+        Schema::create('artist_movie', function (Blueprint $table) {
+            $table->integer('artist_id');
+            $table->integer('movie_id');
         });
     }
 

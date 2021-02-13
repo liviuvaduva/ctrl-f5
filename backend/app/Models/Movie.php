@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Movies extends Model
+class Movie extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -15,7 +15,7 @@ class Movies extends Model
 
     public function artists(): BelongsToMany
     {
-        return $this->belongsToMany(Artists::class);
+        return $this->belongsToMany(Artist::class);
     }
 
 }

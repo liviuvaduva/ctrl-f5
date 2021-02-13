@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\Artists;
+use App\Models\Artist;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\WithFaker;
 
-class ArtistsFactory extends Factory
+class ArtistFactory extends Factory
 {
 
     use WithFaker;
@@ -16,7 +16,7 @@ class ArtistsFactory extends Factory
      *
      * @var string
      */
-    protected string $model = Artists::class;
+    protected string $model = Artist::class;
 
     private array $titles = [
         'star',
