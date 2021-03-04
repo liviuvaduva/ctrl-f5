@@ -1,0 +1,13 @@
+@font-face {
+    font-family: OpenSymbol;
+    src: url('public/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+* {
+    font-family: OpenSymbol, Arial, "Times New Roman", sans-serif;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+}
